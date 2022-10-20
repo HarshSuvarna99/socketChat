@@ -1,12 +1,5 @@
-const httpServer = 3000
+const io = require('socket.io')(3000)
 
-const io = require("socket.io")(3000
-  , {
-  cors: {
-    origin: "https://localhost:3000",
-    methods: ["GET", "POST"]
-  }
-});
 const users = {}
 
 io.on('connection', socket => {

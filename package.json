@@ -1,26 +1,19 @@
 {
-  "name": "socket",
+  "name": "current-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HarshSuvarna99/socketChat.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HarshSuvarna99/socketChat/issues"
-  },
-  "homepage": "https://github.com/HarshSuvarna99/socketChat#readme",
   "dependencies": {
-    "socket.io": "^4.5.3"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^1.19.0"
   }
 }
