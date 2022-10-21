@@ -1,14 +1,16 @@
 const io = require('socket.io')(3000, {
   cors:{
-    origin:["http://localhost:5500"]
+    origin:'*'
   }
 })
 
 const users = {}
 
 io.on('connection', socket => {
+  console.log(`user connected ${socket.id}`);
   //give ids to every new client connected 
   socket.on('new-user', name => {
+    console.log(`user user event ${socket.id}`);
     users[socket.id] = name
     console.log(users);
     socket.broadcast.emit('user-connected', name)

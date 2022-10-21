@@ -6,7 +6,7 @@ const messageTo = document.getElementById('message_to')
 
 
 const name = prompt('What is your name?')
-appendMessage('You joined')
+appendMessage(`${name}'s chat`)
 socket.emit('new-user', name)
 
 //receiving mssg
